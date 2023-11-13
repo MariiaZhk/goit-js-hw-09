@@ -1,0 +1,88 @@
+input#datetime-picker {
+  width: 300px;
+  height: 50px;
+  border: 1px solid #000000;
+  border-radius: 6px;
+  background: #7dcff5;
+  text-align: center;
+  color: #021741;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+input#datetime-picker[disabled] {
+  color: #2fa1f9;
+}
+
+button {
+  display: inline-block;
+  width: 70px;
+  height: 50px;
+  border: 1px solid #000000;
+  border-radius: 6px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #021741;
+  font-weight: 800;
+  transform: all 300ms linear;
+}
+button[disabled] {
+  color: #2fa1f9;
+}
+
+button:active {
+  position: relative;
+  top: 3px;
+}
+
+.timer {
+  display: flex;
+  margin-top: 10px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.value {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 3px;
+  color: #021741;
+}
+
+.label {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #021741;
+}
+
+.flatpickr-months {
+  background-color: #d7eefa;
+}
+
+span.flatpickr-day.selected,
+span.flatpickr-day.selected:hover {
+  background-color: #7dcff5;
+  border-color: #000000;
+  color: #021741;
+}
+
+.flatpickr-day.today.selected {
+  background: #d7eefa;
+  border-color: #000000;
+  color: #021741;
+}
+
+.flatpickr-time input.flatpickr-hour.selected,
+.flatpickr-time input.flatpickr-hour,
+.flatpickr-time input.flatpickr-minute,
+.flatpickr-time input.flatpickr-second {
+  font-weight: 600;
+  color: #021741;
+}
